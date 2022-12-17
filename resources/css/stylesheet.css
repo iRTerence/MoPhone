@@ -1,0 +1,391 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Login Page */
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Poppins' !important;
+}
+.login-page{
+    background-color: #051F7A;
+    padding: 0 2% 0 2%;
+    
+}
+
+/* Image Header CSS */
+#green-background{
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.login-header-photo{
+    padding-top: 30px;
+    /* height: 30%; */
+    text-align: center;
+    position: relative;
+
+}
+
+/* Over 400px screens */
+.phone-call-image{
+    position: absolute;
+    width: 178px;
+    height: 178px;
+    left: 8%;
+    top: 15%;
+}
+
+#check-phone{
+    position: absolute;
+    width: 120px;
+    height: 119px;
+    left: 65%;
+    top: 65%;
+
+}
+
+#white-circle{
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    left: 300px;
+    top: 81px;
+}
+
+#selfie-photo-image{
+    position: absolute;
+    /* width: 113px;
+    height: 112px; */
+    left: 235px;
+    top: 109px;  
+}
+
+#green-circle{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 111px;
+    top: 280px;
+}
+
+/* Iphone SE 370px screens */
+@media screen and (max-width: 380px) {
+    .login-header-photo{
+        padding-top: 0px;    
+    }
+    .phone-call-image{
+        position: absolute;
+        left: 5%;
+        top: 5%;
+    }
+    #check-phone{
+        position: absolute;
+        left: 63%;
+        top: 62%;
+    
+    }
+    #green-circle{
+        position: absolute;
+        left: 100px;
+        top: 250px;
+    }
+    #selfie-photo-image{
+        top: 80px;  
+    }
+    #white-circle {
+        top: 60px;
+    }
+  }
+
+/* Small Devices like Samsung Galaxy s8+ */
+
+@media screen and (max-width: 370px) and (max-width: 380px) {
+    .phone-call-image{
+        position: absolute;
+        width: 178px;
+        height: 178px;
+        left: 4%;
+        /* top: 21%; */
+    }
+    #check-phone{
+        position: absolute;
+        width: 120px;
+        height: 119px;
+        left: 63%;
+        /* top: 105%; */
+    
+    }
+
+    .login-header{
+        padding-top: 15px;
+    }
+
+  }
+
+/* Pixels and regular iPhones */
+@media screen and (min-width: 390px) and (max-width: 400px) {
+  .phone-call-image{
+      position: absolute;
+      width: 178px;
+      height: 178px;
+      left: 7%;
+      top: 13%
+  }
+  #check-phone{
+    position: absolute;
+    width: 120px;
+    height: 119px;
+    left: 63%;
+
+    }
+}
+
+/* Login Text Header */
+.login-page .login-header{
+    /* text-align: center; */
+    color: white;
+    width: 75%;
+    margin: auto;
+
+}
+.login-page .login-header p{
+    margin-bottom: 0;
+}
+
+#welcome-text{
+    font-size:  1.5625em;
+    line-height: 38px;
+    letter-spacing: -0.03em;
+    font-weight: 300;
+}
+
+#company-text{
+    font-size: 3.51758125em;
+    line-height: 50px;
+    font-weight: 700;
+}
+#company-text span{
+    color: #1AD8A2;
+}
+
+/* Login Form */
+
+.login-form{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top:30px;
+}
+
+.login-form input::placeholder{
+    color: black;
+    padding-left: 15px;
+}
+.login-form input[type=submit]{
+    background-color:#1AD8A2;
+    color: white;
+    border: none;
+}
+
+
+/* Support Links */
+.login-form form input{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1.08333px solid #E3E6E3;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    height: 52px;
+    text-align:center;
+}
+
+@media screen and (max-height: 700px) {
+
+    .login-form form input{
+        height: 28px;
+    }
+
+}
+
+.support-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+#signup-link{
+    color:#1AD8A2;
+}
+
+@media screen and (min-height: 700px) {
+
+    .support-links{
+        margin-top:20px;
+    }
+
+}
+
+
+/* Landing Page */
+
+.landing-page{
+    overflow: hidden !important;     
+}
+
+.text-logo{
+    padding-top: 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 19.6208px;
+    line-height: 29px;
+    background-color: #1AD8A2;
+    padding-bottom: 150px;
+    position:relative;
+    overflow: hidden;
+    
+    
+
+}
+
+.landing-page .text-logo{
+    padding-top: 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 19.6208px;
+    line-height: 29px;
+    background-color: #1AD8A2;
+    padding-bottom: 150px;
+    position:relative;
+    overflow: hidden;
+    
+    
+
+}
+
+@media screen and (max-height: 700px){
+    .text-logo{
+        padding-bottom: 125px;
+    }
+}
+
+.text-logo p {
+    margin-top: 25px;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 45px;   
+    letter-spacing: -0.03em;
+}
+
+.text-logo span {
+    color:#051F7A;
+}
+
+/* User Selection Screen */
+.user-selection{
+    height:100%;
+    background-color: #FFFFFF;
+    position: relative;
+    bottom: 4%;
+    border-radius: 5%;
+
+}
+
+#top-right-circle{
+    position: absolute;
+    max-width:100%;
+    left: 263px;
+    top: -39px; 
+    overflow: hidden !important;
+    width: 175px;
+    height: 175px; 
+
+}
+
+#full-clear-circle{
+    position: absolute;
+    width: 113px;
+    height: 113px;
+    left: 224px;
+    top: 136px;
+}
+
+.user-image{
+    position: absolute;
+    width: 180px;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 5px solid white;  
+}
+
+.name-container{
+    text-align: center;
+    padding-top:75px;
+}
+
+#profile-name{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;    
+    letter-spacing: -0.03em;
+    color: #051F7A;
+}
+
+#secondary-name{
+    font-size: 15px;
+    line-height: 22px;    
+    letter-spacing: -0.03em;
+    color: #1AD8A2;
+}
+
+.user-selection-options{
+    width:80%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.user-selection-options hr{
+    margin-top: 1rem;
+}
+
+.signout-text{
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 380px){
+    .user-selection-options hr{
+        margin-top: .5rem;
+    }
+
+    .user-selection-options {
+        margin-top: 0;
+    }
+
+    .signout-text{
+        margin-top: 0rem;
+    }
+    
+    .text-logo p{
+        margin-top: 0;
+    }
+    
+    
+}
+
+
+.selection-options{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;    
+    letter-spacing: -0.03em;
+    color: #051F7A;
+}
+
+#landing-signout{
+    text-decoration: none;
+    color:#1AD8A2;
+}
+
+/* Payment Pages */
