@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
 /* Login Page */
 html, body {
     margin: 0;
@@ -69,78 +69,6 @@ html, body {
     top: 280px;
 }
 
-/* Iphone SE 370px screens */
-@media screen and (max-width: 380px) {
-    .login-header-photo{
-        padding-top: 0px;    
-    }
-    .phone-call-image{
-        position: absolute;
-        left: 5%;
-        top: 5%;
-    }
-    #check-phone{
-        position: absolute;
-        left: 63%;
-        top: 62%;
-    
-    }
-    #green-circle{
-        position: absolute;
-        left: 100px;
-        top: 250px;
-    }
-    #selfie-photo-image{
-        top: 80px;  
-    }
-    #white-circle {
-        top: 60px;
-    }
-  }
-
-/* Small Devices like Samsung Galaxy s8+ */
-
-@media screen and (max-width: 370px) and (max-width: 380px) {
-    .phone-call-image{
-        position: absolute;
-        width: 178px;
-        height: 178px;
-        left: 4%;
-        /* top: 21%; */
-    }
-    #check-phone{
-        position: absolute;
-        width: 120px;
-        height: 119px;
-        left: 63%;
-        /* top: 105%; */
-    
-    }
-
-    .login-header{
-        padding-top: 15px;
-    }
-
-  }
-
-/* Pixels and regular iPhones */
-@media screen and (min-width: 390px) and (max-width: 400px) {
-  .phone-call-image{
-      position: absolute;
-      width: 178px;
-      height: 178px;
-      left: 7%;
-      top: 13%
-  }
-  #check-phone{
-    position: absolute;
-    width: 120px;
-    height: 119px;
-    left: 63%;
-
-    }
-}
-
 /* Login Text Header */
 .login-page .login-header{
     /* text-align: center; */
@@ -169,6 +97,93 @@ html, body {
     color: #1AD8A2;
 }
 
+/* Iphone SE 370px screens */
+@media screen and (max-width: 380px) {
+    .login-header-photo{
+        padding-top: 0px;    
+    }
+    .login-page .login-header{
+        width: 83%;
+    
+    }
+    .phone-call-image{
+        position: absolute;
+        left: 5%;
+        top: 5%;
+    }
+    #check-phone{
+        position: absolute;
+        left: 63%;
+        top: 62%;
+    
+    }
+    #green-circle{
+        position: absolute;
+        left: 100px;
+        top: 250px;
+    }
+    #selfie-photo-image{
+        top: 80px;  
+    }
+    #white-circle {
+        top: 60px;
+    }
+  }
+
+/* Small Devices like Samsung Galaxy s8+ */
+
+@media screen and (max-width: 370px) and (max-width: 380px) {
+
+    .login-page .login-header{
+        width: 85%;
+    
+    }
+    .phone-call-image{
+        position: absolute;
+        width: 178px;
+        height: 178px;
+        left: 4%;
+        /* top: 21%; */
+    }
+    #check-phone{
+        position: absolute;
+        width: 120px;
+        height: 119px;
+        left: 63%;
+        /* top: 105%; */
+    
+    }
+
+    .login-header{
+        padding-top: 15px;
+    }
+
+  }
+
+/* Pixels and regular iPhones */
+@media screen and (min-width: 390px) and (max-width: 400px) {
+    .login-page .login-header{
+        width: 80%;
+    
+    }
+  .phone-call-image{
+      position: absolute;
+      width: 178px;
+      height: 178px;
+      left: 7%;
+      top: 13%
+  }
+  #check-phone{
+    position: absolute;
+    width: 120px;
+    height: 119px;
+    left: 63%;
+
+    }
+}
+
+
+
 /* Login Form */
 
 .login-form{
@@ -186,6 +201,10 @@ html, body {
     background-color:#1AD8A2;
     color: white;
     border: none;
+}
+
+.login-form, textarea:focus, input:focus{
+    outline: none;
 }
 
 
@@ -389,3 +408,216 @@ html, body {
 }
 
 /* Payment Pages */
+
+.payment-page .text-logo {
+    padding-bottom: 50px;
+
+}
+
+.payment-page .text-logo p{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 150%;
+}
+
+.payment-page .display-header{
+    display:flex;
+}
+
+.corner-pfp img{
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Payment Page Payment Options css */
+
+.payment-options{
+    position: relative;
+    background: white;
+    bottom: 2%;
+    border-radius: 17px;
+}
+
+.payment-options .header-text{
+    font-size: 11px;
+    line-height: 150%;
+    color: #7B7B7B;
+    padding-top: 45px;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    align-items: center;
+  }
+  
+
+.box:first-child > span { margin-right: auto; }
+
+.box:last-child  > span { margin-left: auto;  }
+
+.payment-options .top-up {
+    background: rgba(26, 216, 162, 0.1);
+    border-radius: 10px;
+    height:42px;
+    width: 90%;
+    margin: auto;
+    font-size: 14px;
+    align-items:center;
+    margin-top: 30px;
+
+}
+
+.payment-options .top-up-date {
+    color: #1AD8A2;
+    text-align: right;
+}
+
+.payment-options .button-ammount-style{
+    font-size: 12.5055px;
+    line-height: 150%;
+    border: 0.568433px solid rgba(0, 0, 0, 0.25);
+    border-radius: 9.09493px;
+    width: 67.08px;
+    height: 34.11px;
+    background: white;
+}
+
+.button-ammount{
+    
+    width: 90%;
+    margin: auto !important;
+    margin-top: 15px !important; 
+    
+}
+
+.payment-page .payment-method{
+    
+    display:flex;
+    color: #7B7B7B;
+    font-size: 11px;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.payment-page .change-method{
+    color: #051F7A;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.payment-page .current-payment{
+    background: rgba(26, 216, 162, 0.1);
+    border-radius: 10px;
+    height:42px;
+    width: 90%;
+    margin: auto;
+    font-size: 14px;
+    align-items:center;
+}
+.payment-page .continue {
+    width: 80%;
+    margin: auto;
+    margin-top: 110px;
+
+
+}
+
+.payment-page .continue button{
+    background: #051F7A;
+    border-radius: 40px;
+    color: white;
+    border: none;
+    padding: 15px 0 15px 0;
+    width: 100%;
+
+}
+
+.nav{
+    border-top: 1.5px solid #1AD8A2;
+
+}
+.navbar {
+    height: 85px;
+    width: 80%;
+    margin: auto;
+}
+
+.nav-text{
+    color: #7B7B7B;
+    font-size: 11px;
+}
+
+/* These changes are for the top right hand corner PFP */
+
+/* Iphone SE 370px screens */
+@media screen and (max-width: 380px) {
+
+    .payment-page .continue {
+        margin-top: 30px;
+
+    }
+
+    .payment-page .payment-method {
+        margin-top: 20px;
+
+    }
+
+    .payment-page #top-right-circle{
+        left: 203px;
+    }
+
+    .payment-options{
+
+        bottom: 5%;
+
+    }
+    .payment-page .text-logo p{
+
+        margin-top:20px;
+
+    }
+
+  }
+
+/* Small Devices like Samsung Galaxy s8+ */
+
+@media screen and (max-width: 370px) and (max-width: 380px) {
+
+    .payment-page .continue {
+        margin-top: 50px;
+
+    }
+
+    .payment-page .payment-method {
+        margin-top: 40px;
+
+    }
+
+  }
+
+
+
+/* Small Devices like Samsung Galaxy s8+ */
+
+@media screen and (max-width: 370px) and (max-width: 380px) {
+
+
+
+  }
+
+/* Pixels and regular iPhones */
+@media screen and (min-width: 390px) and (max-width: 400px) {
+
+    .payment-page #top-right-circle{
+        left: 240px;
+    }
+    
+}
