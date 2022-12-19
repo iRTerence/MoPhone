@@ -587,6 +587,10 @@ html, body {
 
     }
 
+    .payment-options .header-text {
+        padding-top: 25px;
+    }
+
   }
 
 /* Small Devices like Samsung Galaxy s8+ */
@@ -626,4 +630,13 @@ html, body {
 
 .selected-payment{
     background: rgba(26, 216, 162, 0.5) !important;
+}
+
+#custom-input{
+    display: none;
+    text-align: center;
+    width: 80%;
+    margin:auto;
+    margin-top: 5px;
+
 }
